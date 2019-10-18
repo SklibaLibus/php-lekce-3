@@ -12,15 +12,24 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Číslo řádku</th>
-                <th>Počet řádků</th>
+                <th>Předmět</th>
+                <th>Známka</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>prvni sloupec</td>
-                <td>druhy sloupec</td>
-            </tr>
+        <?php
+        $radek = 1;
+        $pocetRadku = 5;
+
+        while($radek <= $pocetRadku) {
+            echo "<tr>
+                <td>$radek</td>
+                <td>$pocetRadku</td>
+            </tr>";
+            $radek = $radek + 1;
+        }
+        ?>
+
         </tbody>
     </table>
 </div>
